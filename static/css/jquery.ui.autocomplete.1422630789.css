@@ -1,0 +1,123 @@
+
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete-loading {
+	background-color: #18191b !important;
+	background-image: none !important;
+}
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/* Autocomplete marketplace----------------------------------*/
+.jq-marketplace-autocomplete-search-add{
+	position: absolute;
+	cursor: default;
+	background: #fff;
+	border-bottom: 1px solid silver;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+}
+
+/* Menu
+----------------------------------*/
+.jq-marketplace-autocomplete-search-add{
+	list-style:none;
+	padding: 0px;
+	margin: 0;
+	display:block;
+	z-index: 95 !important;
+	width: 378px !important;
+	overflow: auto;
+	zoom: 1;
+	height: 190px;
+}
+
+.jq-marketplace-autocomplete-search-add .ui-menu-item {
+	min-height: 25px;
+	line-height: 19px;
+	padding-left: 10px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #e6e6e6;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jq-marketplace-autocomplete-search-add a {
+	color: #5D5D5D;
+}
+.jq-marketplace-autocomplete-search-add .ui-menu-item a.ui-state-hover,
+.jq-marketplace-autocomplete-search-add .ui-menu-item a.ui-state-active {
+	background: silver;
+	border-radius: 3px;
+}
+.jq-marketplace-autocomplete-search-add .ui-menu-item:hover,
+.jq-marketplace-autocomplete-search-add .ui-menu-item-highlight {
+	color: #5D5D5D;
+	background-color: #F0F0F0;
+	text-decoration: none;
+}
+.jq-marketplace-autocomplete-search-add .ui-menu-item:hover a,
+.jq-marketplace-autocomplete-search-add .ui-menu-item-highlight a{
+	color: #5D5D5D;
+	background-color: #F0F0F0;
+	text-decoration: none;
+}
+
+/* Autocomplete marketplace----------------------------------*/
+.jq-marketplace-autocomplete-search-list{
+	position: absolute;
+	cursor: default;
+	background: #fff;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+}
+
+/* Menu
+----------------------------------*/
+.jq-marketplace-autocomplete-search-list{
+	list-style:none;
+	padding: 0px;
+	margin: 0;
+	display:block;
+	z-index: 95 !important;
+	width: 378px !important;
+	overflow: auto;
+	zoom: 1;
+	height: 190px;
+}
+
+.jq-marketplace-autocomplete-search-list .ui-menu-item {
+	min-height: 25px;
+	line-height: 19px;
+	padding-left: 10px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #e6e6e6;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jq-marketplace-autocomplete-search-list a {
+	color: #5D5D5D;
+}
+.jq-marketplace-autocomplete-search-list .ui-menu-item a.ui-state-hover,
+.jq-marketplace-autocomplete-search-list .ui-menu-item a.ui-state-active {
+	background: silver;
+	border-radius: 3px;
+}
+.jq-marketplace-autocomplete-search-list .ui-menu-item:hover,
+.jq-marketplace-autocomplete-search-list .ui-menu-item-highlight {
+	color: #5D5D5D;
+	background-color: #F0F0F0;
+	text-decoration: none;
+}
+.jq-marketplace-autocomplete-search-list .ui-menu-item:hover a,
+.jq-marketplace-autocomplete-search-list .ui-menu-item-highlight a{
+	color: #5D5D5D;
+	background-color: #F0F0F0;
+	text-decoration: none;
+}

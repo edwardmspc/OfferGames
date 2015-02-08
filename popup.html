@@ -1,0 +1,25 @@
+
+        
+        <div id="notify_popup" class="popup2">
+            <div class="popup2_box" style="display: block; width: 470px;" >
+                <a href="#" class="dialog_exit2" onclick="jQuery('#notify_popup').fadeOut();">&nbsp;</a>
+                <h2 class="notify_popup_h2">Avísame cuando el producto esté disponible</h2>
+                <div class="notify_popup_text">
+                    Lo sentimos pero este producto no está disponible en este momento. Te avisamos vía correo electrónico en cuanto esté disponible (normalmente en 72h).   
+                </div>
+                <form action="https://www.g2a.com/notify/index/customeradd/" method="post" id="notify_popup_form"  style="margin: 0px;">
+                    <div class="notify_popup_email">
+                        <input type="hidden" name="notify_id_product" id="notify_id_product" value="0" />
+                        <input type="text" name="notify_email" placeholder="Dirección email" class="notify_popup_input" id="notify_popup_input_email" value="" />
+                        <ul class="messages">
+                            <li class="success-msg" style="display: none"></li>
+                            <li class="error-msg" style="display: none"></li>
+                        </ul>
+                    </div>
+                    <div class="socials_dialog2 socials_dialog23 free_space">
+                        <div class="cancel" onclick="jQuery('#notify_popup').fadeOut();">Cancelar</div>
+                        <input type="submit" class="button" id="notify_popup_button" value="Avísame" />
+                    </div>
+                </form>
+            </div>
+        </div>popup

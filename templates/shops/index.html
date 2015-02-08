@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>OfferGames</title>
+        {% load static from staticfiles %}
+        <meta name="description" content="G2A.COM - digital games marketplace for everyone" />
+        <meta name="keywords" content="g2a , cd keys, game codes, store, codes, key, cd key" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/flags32_v7.1422630789.css' %}" media="all" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_bod.1422630789.css' %}" media="all" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.1422630789.css' %}" media="all" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/header.1422630789.css' %}" media="all" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/mpfilters.1422630789.css' %}" media="all" />
+        <!--
+        <link rel="stylesheet" type="text/css" href="css/toolbar.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.ui.autocomplete.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/styleLifting.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/uniform.default.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/style_fonts_v2.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/facebook/facebook.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/new-checkout-fix.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/mp_account.1422630789.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/popups/g2apay-unified-balance.1422630789.css" media="all" />
+        -->
+
+    </head>
+    <body>
+        <div id="body_clicker" style="display: block; background-image: url(https://www.g2a.com/media/wallpaper/0115/712ccc83b09ba26deaf4c7ef218a2a27.jpg);"></div>
+        <div class="mp-header" id="mpHeader">
+            <div class="mp-head-wrap">
+                <div class="mp-head-top">
+                    <div class="mp-head-like">
+                        <!--<div class="fb fb-like fb_iframe_widget" data-href="https://www.facebook.com/G2Acom" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="tahoma" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=341721865931208&amp;container_width=147&amp;font=tahoma&amp;href=https%3A%2F%2Fwww.facebook.com%2FG2Acom&amp;layout=button_count&amp;locale=es_ES&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=100"><span style="vertical-align: bottom; width: 130px; height: 20px;"><iframe name="f35455439c" width="100px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?app_id=341721865931208&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FDU1Ia251o0y.js%3Fversion%3D41%23cb%3Df198fc388%26domain%3Dwww.g2a.com%26origin%3Dhttps%253A%252F%252Fwww.g2a.com%252Ffe8462e28%26relation%3Dparent.parent&amp;container_width=147&amp;font=tahoma&amp;href=https%3A%2F%2Fwww.facebook.com%2FG2Acom&amp;layout=button_count&amp;locale=es_ES&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=100" style="border: none; visibility: visible; width: 130px; height: 20px;" class=""></iframe></span></div>-->
+                    </div>
+                    <div class="mp-head-goldmine">
+                        <a href="/goldmine">
+                        <img src="https://www.g2a.com/skin/frontend/gate/default/images/header/ico1.png" alt="" class="goldmine_gold_img">
+                        <span>
+                        <strong>G2A Goldmine Earn real money with us</strong>
+                        </span>
+                        </a>
+                    </div>
+                    <div class="mp-head-stc">
+                        <a href="/savethechildren">
+                            <div class="icon icon-charity"></div>
+                            <span>Save the Children with us</span>
+                        </a>
+                    </div>
+                    <div class="mp-head-switch">
+                        <div class="mp-head-local">
+                            <div class="mp-head-local1 f32">
+                                <div class="mp-head-local-store">
+                                    <span class="regions5 flag spanish">&nbsp;</span>   
+                                    Spain       
+                                </div>
+                            </div>
+                            <div class="mp-head-local2">
+                                <div class="mp-head-local-currency">
+                                    USD     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mp-head-bottom">
+                    <div class="mp-head-logo">
+                        <a href="/" title="www.g2a.com">
+                        <img src="{% static 'images/offergames-1418532593.jpg' %}" alt="">
+                        </a>
+                    </div>
+                    <div class="mp-head-search">
+                        <div id="search-wrap">
+                            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="mp-h-main ui-autocomplete-input" id="product-autocomplete" data-autocomplete="Buscar juego" value="Buscar juego" onblur="this.value='Buscar juego'" onfocus="if (this.value == 'Buscar juego') this.value = '';" data-rel="active" autocomplete="off">
+                            <button>
+                            <img src="https://www.g2a.com/skin/frontend/gate/default/images/header/lupe.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <!--<div class="mp-head-customer">-->
+                        <div id="login">
+                            <div class="mp-head-customer-no-login">
+                                <div class="m-row" style="">
+                                    <!--<div class="m-login-link-b" title="Login" onclick="startSellingMPFix()" rel="fb_form">Start selling on G2A now</div>-->
+                                    <div class="m-login-link" title="Login" id="loginLink" rel="fb_form">Acceder</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div id="cart-wrap" style="width: 45px; padding-top: 6px; padding-right: 0px;">
+                            <div id="cart-wrap3">
+                                <div id="cart-loader">
+                                    <div class="spinner">
+                                        <div class="bounce1"></div>
+                                        <div class="bounce2"></div>
+                                        <div class="bounce3"></div>
+                                    </div>
+                                </div>
+                                <div class="mp-head-baster-hover"></div>
+                                <div class="cart-list" id="toolbar-cart-table">
+                                </div>
+                                <div class="item_comm" id="jq-cart-empty">Basket is empty</div>
+                                <a href="https://www.g2a.com/checkout/cart/" class="mp-head-baster-list-link">
+                                    <div class="mp-head-baster-list-button">Caja Segura</div>
+                                </a>
+                            </div>
+                            <div class="headerCartIcon icon-cart" id="cart">
+                                <span class="shield-cart"></span>
+                                <div class="headerCartCount toolbar-cart-items-counter" style="display: none;">0</div>
+                            </div>
+                            <div id="toolbar-product-added" style="display: none">
+                                <div id="cart-tri"> </div>
+                                <div id="cart-ico"> </div>
+                                <div id="cart-text">Product added to cart        <br>
+                                    <strong>Click here to open</strong>
+                                </div>
+                            </div>
+                            </div>
+                    </div>-->
+                    <div class="g2a-bbt">
+                        <img src="https://www.g2a.com/skin/frontend/gate/default/images/btt.png" alt="">
+                    </div>
+                    <!-- #subir -->
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <div id="content-landing">
+                <div id="content-tabs" style="min-height: 600px;">
+                    <div id="content-tabs-0">
+                        <div class="std"><span id="ezzoom-messages"></span>&nbsp;</div>
+                        <div id="filters">
+                            <div class="mp-front">
+                                <div style="width: 100%; min-height: 67px; background: #4c4f54;">
+                                    <ul class="mp-front-menu" style="width: 999px; margin-right: -58px;">
+                                        <li data-default="Todos los juegos" id="jq_eventfilter" class="filters2" style="float: left; width: 321px">
+                                            <div class="mp-fm-strip"></div>
+                                            <strong>Juegos</strong>
+                                            <span>
+                                            <span class="clear" data-rel="0">Todos los juegos</span>
+                                            <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/close2.png" class="mp-fm-close" alt="">
+                                            </span>
+                                            <div class="mp-front-arrow"></div>
+                                            <div class="mp-front-menu-drop-down">
+                                                <ul style="display: none;">
+                                                    <li data-rel="0" class="active">Todos los juegos</li>
+                                                    <li data-rel="1">Top ventas</li>
+                                                    <li data-rel="2">Nuevos</li>
+                                                    <li data-rel="3">Reservas</li>
+                                                    <li data-rel="11">Unique Items</li>
+                                                    <li data-rel="4">Packs</li>
+                                                    <li data-rel="5">Controller Support</li>
+                                                    <li data-rel="6">Software</li>
+                                                    <li data-rel="7">Points / Currency</li>
+                                                    <li data-rel="8">Prepaids</li>
+                                                    <li data-rel="9">Subscriptions</li>
+                                                    <li data-rel="10">Oculus Rift Support</li>
+                                                    <li data-rel="12">DLC</li>
+                                                    <li data-rel="13">Free to play</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li data-default="Todas las plataformas" id="jq_platformfilter" class="filters2" style="float: left; width: 321px;">
+                                            <div class="mp-fm-strip"></div>
+                                            <strong>Plataforma</strong>
+                                            <span>
+                                            <span class="clear" data-rel="0">Todas las plataformas</span>
+                                            <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/close2.png" class="mp-fm-close" alt="">
+                                            </span>
+                                            <div class="mp-front-arrow"></div>
+                                            <div class="mp-front-menu-drop-down">
+                                                <ul style="display: none;">
+                                                    <li data-rel="0" class="active" style="padding-left:67px">Todas las plataformas</li>
+                                                    <li data-rel="16">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/origin.png" alt=""></div>
+                                                        Origen
+                                                    </li>
+                                                    <li data-rel="17">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/steam.png" alt=""></div>
+                                                        Steam
+                                                    </li>
+                                                    <li data-rel="115">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/xbox.png" alt=""></div>
+                                                        Xbox
+                                                    </li>
+                                                    <li data-rel="118">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/psn.png" alt=""></div>
+                                                        PSN
+                                                    </li>
+                                                    <li data-rel="117">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/apple.png" alt=""></div>
+                                                        Apple
+                                                    </li>
+                                                    <li data-rel="100">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/gameforge.png" alt=""></div>
+                                                        Gameforge
+                                                    </li>
+                                                    <li data-rel="18">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/battlenet.png" alt=""></div>
+                                                        Battlenet
+                                                    </li>
+                                                    <li data-rel="24">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/uplay.png" alt=""></div>
+                                                        Uplay
+                                                    </li>
+                                                    <li data-rel="440">
+                                                        <div class="mp-fm-ico"> <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/desura.png" alt=""></div>
+                                                        Desura
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li data-default="Todos los géneros" id="jq_genrefilter" class="filters2 filters2_1" style="float: left; width: 321px;">
+                                            <div class="mp-fm-strip"></div>
+                                            <strong>Género</strong>
+                                            <span>
+                                            <span class="clear" data-rel="0">Todos los géneros</span>
+                                            <img src="https://www.g2a.com/skin/frontend/gate/default/images/marketplace/close2.png" class="mp-fm-close" alt="">
+                                            </span>
+                                            <div class="mp-front-arrow"></div>
+                                            <div class="mp-front-menu-drop-down">
+                                                <div class="mp-front-menu-category-b"></div>
+                                                <ul class="small">
+                                                    <li data-rel="0" class="active" style="width: 460px;">Todos los géneros</li>
+                                                    <li data-rel="544">Aventura</li>
+                                                    <li data-rel="545">Acción</li>
+                                                    <li data-rel="546">Arcade</li>
+                                                    <li data-rel="547">Economía</li>
+                                                    <li data-rel="548">Lucha</li>
+                                                    <li data-rel="549">FPS / FPP</li>
+                                                    <li data-rel="550">Horror</li>
+                                                    <li data-rel="551">Indie</li>
+                                                    <li data-rel="552">MMO</li>
+                                                    <li data-rel="553">Música</li>
+                                                    <li data-rel="554">Platformer</li>
+                                                    <li data-rel="555">Puzzle</li>
+                                                    <li data-rel="556">Conducción</li>
+                                                    <li data-rel="557">RPG</li>
+                                                    <li data-rel="558">Simulador</li>
+                                                    <li data-rel="559">Deporte</li>
+                                                    <li data-rel="560">Estrategia</li>
+                                                    <li data-rel="561">TPS / TPP</li>
+                                                    <li data-rel="564">Hack'n'Slash</li>
+                                                    <li data-rel="568">Defensa de la torre</li>
+                                                    <li data-rel="580">Cooperative</li>
+                                                    <li data-rel="581">Stealth</li>
+                                                    <li data-rel="582">Point'n'click</li>
+                                                    <li data-rel="587">Tactical</li>
+                                                    <li data-rel="679">Subscriptions</li>
+                                                    <li data-rel="1480">Early Access</li>
+                                                    <li data-rel="1582">Child Friendly</li>
+                                                    <li data-rel="1807">Collector's Edition</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mp-front-range m-row">
+                                    <div class="mp-range">
+                                        <span>Precios</span>
+                                        <div class="mp-range-min">
+                                            <input type="text" name="slidemin">
+                                        </div>
+                                        <div class="mp-range-drag ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                            <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
+                                            <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a>
+                                        </div>
+                                        <div class="mp-range-max">
+                                            <input type="text" name="slidemax">
+                                        </div>
+                                    </div>
+                                    <div class="view-switcher">
+                                        <a id="view-list" href="">List view</a>
+                                        <a id="view-grid" href="">Grid view</a>
+                                    </div>
+                                    <div id="jq_found" style="float: left; margin-top: 15px; display: none;"></div>
+                                    <div id="jq_filterreset" class="f_button_reset">RESET</div>
+                                    <div id="jq_community" class="mp-comunity" style="display: block;">
+                                        <div>New auctions</div>
+                                    </div>
+                                    <div id="jq_found" style="float: left; margin-top: 15px; display: none;"></div>
+                                </div>
+                            </div>
+                            <!-- end mp-front -->
+                            <div style="clear: both;"></div>
+                            <div id="jq_sort" data-rel="0" style="display: none;">
+                                <span data-rel="1">sortuj od tanich</span> |
+                                <span data-rel="2">sortuj od drogich</span> |
+                                <span data-rel="0" class="active">najczesciej kupowane</span>
+                            </div>
+                            <div id="product-small-template2" style="display:none;" class="product-small2" onclick="return true">
+                                <a class="product_small_a"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <div class="mp-procuct-head mp-p-head-preorder">
+                                    Reserva <span class="preorders2_d_r"></span>
+                                </div>
+                                <div class="mp-procuct-head mp-p-head-dailyday">
+                                    Tiempo que falta            <span class="expires">
+                                    <span class="remaining_time_new"></span>
+                                    </span>
+                                </div>
+                                <img alt="" src="#" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"></div>
+                                    <div class="creation-time"></div>
+                                    <a class="product_name_link">
+                                        <h4></h4>
+                                    </a>
+                                    <a class="mp-chepest-offer">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA"></strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA"></strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min"></strong>
+                                    </div>
+                                    <strong class="mp-pi-price"></strong>
+                                    <a href="#" class="jq_notify mini"><button class="button_view">Ver</button></a>
+                                    <a href="javascript: void(0);" class="buy_nowa2 "><button class="button_buy">COMPRAR</button></a>
+                                    <a href="javascript: void(0);" class="pre-order2"><button class="button_preorder">PRE-ORDER</button></a>
+                                </div>
+                            </div>
+                            <div id="product-small-template3" style="display:none;" class="product-small2 hurt">
+                                <div class="mp-procuct-overlay"></div>
+                                <div class="mp-procuct-head mp-p-head-preorder">
+                                    Reserva <span class="preorders2_d_r"></span>
+                                </div>
+                                <img alt="" src="#" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"></div>
+                                    <a class="product_name_link">
+                                        <h4></h4>
+                                    </a>
+                                    <button class="mp-pi-button1 jq-sel">Sell one like this</button>
+                                    <button class="mp-pi-button1 jq-buy">COMPRAR</button>
+                                    <button class="mp-pi-button2">Place a bid</button>
+                                    <span class="mp-pi-avalible ava"><strong></strong> items available</span>
+                                    <span class="mp-pi-avalible mp-pi-avalible-color">Bids for <strong></strong> items</span>
+                                    <strong class="mp-pi-price"><span>Desde</span> </strong>
+                                </div>
+                            </div>
+                            <div id="boxmarketing-template" style="display:none;" class="boxmarketing">
+                                <a href="index.html" class="product_big_a">
+                                    <div class="product_big_b" style="opacity: 1; display: none;">&nbsp;</div>
+                                    <img src="#">
+                                    <div class="product-info">
+                                        <div class="no-hover">
+                                            <h2></h2>
+                                            <h3></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="list-view-header" style="display: none;">
+                            <div>Nombre del producto</div>
+                            <div>Available items</div>
+                            <div>Price from</div>
+                        </div>
+                        <p id="jq_noproducts" class="notice-msg" style="display: none;"><b><br/><br/>No existen productos que cumplan el criterio de seleci&oacute;n</b><br/><br/></p>
+                        <!--<div id="jq_startproducts" style="width: 976px;">
+                            <div class="home_preloader">
+                                <div class="preloader_1"></div>
+                                Cargando    </div>
+                            </div>-->
+                        <div id="jq_startproducts" style="width: 976px;">
+                            <div id="boxmarketing-template" style="display: block;" class="boxmarketing">
+                                <a href="https://www.g2a.com/weeklysale" class="product_big_a">
+                                    <div class="product_big_b" style="opacity: 1; display: none;">&nbsp;</div>
+                                    <img src="https://www.g2a.com/media/boxmarketing/0215/8c6e6144e2939e0c2b048a05e65124c6.jpg">
+                                    <div class="product-info">
+                                        <div class="no-hover">
+                                            <h2>Hiyaaa! Feel the punch of the new Weekly Sale!</h2>
+                                            <h3></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/world-of-warcraft-prepaid.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <div class="mp-procuct-head mp-p-head-dailyday">
+                                    Tiempo que falta            <span class="expires">
+                                    <span class="remaining_time_new">04:25:24</span>
+                                    </span>
+                                </div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/w/o/world-of-warcraft-timecard-2d_1.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34a3e1caf56_battlenet.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34de4e986620_60days_timecard.jpg" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/world-of-warcraft-prepaid.html">
+                                        <h4>World of Warcraft 60 days Time Card Prepaid EU</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/world-of-warcraft-prepaid.html#194101">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">8</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">21.20 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">21.20 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">23.09 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(13, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/13/?auction_id=162323&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/rust-steam-cd-key-eu.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/r/u/rust-steam-cd-key-eu2d.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34aee5c1f22_steam.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34b21a74a710_cdkey.gif" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/rust-steam-cd-key-eu.html">
+                                        <h4>Rust EARLY ACCESS STEAM CD-KEY GLOBAL</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/rust-steam-cd-key-eu.html#308356">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">19</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">6.00 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">6.00 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">6.99 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(2791, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/2791/?auction_id=294885&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/counter-strike-global-offensive-global.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/c/o/counter-strike-global-offensive---2d.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34aee5c1f22_steam.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34b21a74a710_cdkey.gif" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/counter-strike-global-offensive-global.html">
+                                        <h4>Counter-Strike: Global Offensive STEAM CD-KEY GLOBAL</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/counter-strike-global-offensive-global.html#311095">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">15</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">9.45 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">9.45 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">10.98 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(94, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/94/?auction_id=322641&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/hearthstone-booster-pack-code-global.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/h/e/hearthstone-booster-pack-2d.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34a3e1caf56_battlenet.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34b21a74a710_cdkey.gif" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/hearthstone-booster-pack-code-global.html">
+                                        <h4>Hearthstone Booster Pack Code GLOBAL</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/hearthstone-booster-pack-code-global.html#320838">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">17</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">1.09 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">1.09 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">2.16 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(5168, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/5168/?auction_id=322061&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/dying-light-steam-cd-key-preorder-global.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/d/y/dying_light_2d_global.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34aee5c1f22_steam.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34b21a74a710_cdkey.gif" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/dying-light-steam-cd-key-preorder-global.html">
+                                        <h4>Dying Light STEAM CD-KEY GLOBAL</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/dying-light-steam-cd-key-preorder-global.html#322754">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">7</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">34.98 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">33.99 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">33.99 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(14113, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/14113/?auction_id=0&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/xbox-live-12-months-gold-subscription-card-gold-pl-eu-us.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/x/b/xbox-live-12-months---2d_1.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34b0d170143_xbox.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34fe15b71a16_12months_timecard.jpg" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/xbox-live-12-months-gold-subscription-card-gold-pl-eu-us.html">
+                                        <h4>Xbox Live 12 Months GOLD Subscription Card PL/EU/US</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/xbox-live-12-months-gold-subscription-card-gold-pl-eu-us.html#204777">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">9</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">28.99 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">28.99 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">33.20 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(26, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/26/?auction_id=322267&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/middle-earth-shadow-of-mordor-steam-cd-key-global.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/m/i/middle-earth-shadow-of-mordor-2d.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34aee5c1f22_steam.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34b21a74a710_cdkey.gif" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/middle-earth-shadow-of-mordor-steam-cd-key-global.html">
+                                        <h4>Middle-earth: Shadow of Mordor STEAM CD-KEY GLOBAL</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/middle-earth-shadow-of-mordor-steam-cd-key-global.html#280510">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">21</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">11.70 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">11.70 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">13.99 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(9828, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/9828/?auction_id=275840&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/diablo-3-reaper-of-souls-cd-key-global.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/d/i/diablo-3-reaper-of-souls--2d_3.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a34a3e1caf56_battlenet.gif" alt=""><img src="https://www.g2a.com/media/proicons/51a34b21a74a710_cdkey.gif" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/diablo-3-reaper-of-souls-cd-key-global.html">
+                                        <h4>Diablo 3: Reaper of Souls CD-KEY GLOBAL</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/diablo-3-reaper-of-souls-cd-key-global.html#161343">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">5</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">18.95 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">18.95 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">20.84 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(4928, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/4928/?auction_id=161343&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="product-small2" onclick="return true">
+                                <a class="product_small_a" href="/xbox-live-3-months-gold-subscription-card-gold-pl-eu-us.html"></a>
+                                <div class="mp-procuct-overlay"></div>
+                                <img alt="" src="https://www.g2a.com/media/catalog/product/cache/0/small_image/242x344/170ec19af00183b5e0368529fc2daa2f/x/b/xbox-live-3-months---2d_1.jpg" class="main-pic">
+                                <div class="mp-product-info">
+                                    <div class="no-hover_img3"><img class="proicon community" src="/skin/frontend/gate/default/images/comm.jpg" alt="community"><img src="https://www.g2a.com/media/proicons/51a4b3418569850_months.jpg" alt=""></div>
+                                    <div class="creation-time" style="display: none;"></div>
+                                    <a class="product_name_link" href="/xbox-live-3-months-gold-subscription-card-gold-pl-eu-us.html">
+                                        <h4>Xbox Live 3 Months GOLD Subscription Card PL/EU/US</h4>
+                                    </a>
+                                    <a class="mp-chepest-offer" href="/xbox-live-3-months-gold-subscription-card-gold-pl-eu-us.html#268852">
+                                        <div class="mp-ch-left">
+                                            <span><strong class="countA">10</strong> <strong>sellers</strong> from</span>
+                                            <strong class="priceA">12.25 €</strong>
+                                        </div>
+                                        <div class="mp-ch-right"></div>
+                                    </a>
+                                    <div class="priceMin">
+                                        <div class="priceMinLabel">Desde</div>
+                                        <strong class="mp-pi-price-min">12.25 €</strong>
+                                    </div>
+                                    <strong class="mp-pi-price">13.99 €</strong>
+                                    <a href="javascript: void(0);" class="buy_nowa2 " onclick="checkRegionProductOrBuy(24, '/checkout/cart/add/uenc/aHR0cDovLw,,/product/24/?auction_id=0&amp;escrow=1')"><button class="button_buy">COMPRAR</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end jq_startproducts-->
+                        <div class="clear"></div>
+                        <br/>
+                        <div id="jq_filterloadmore" title="Cargar más" style="display: block;">Cargar más</div>
+                    </div>
+                    <img src="skin/frontend/gate/default/images/socializer.jpg" alt="" style="float:right; margin-right:10px;margin-top: 4px;"/>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="footer-wrap">
+            <div id="footer3">
+                <div id="footer">
+                   
+                    <div class="partners-wrapper">
+                        <h5>NUESTROS SOCIOS</h5>
+                        <div class="partners">
+                            <a href="http://www.cipsoft.com/" target="_blank" class="p1"><img src="{% static 'images/pp2.png' %}" alt="" class="greyScale"/></a>
+                            <a href="http://gameforge.com/" target="_blank" class="p2"><img src="{% static 'images/pp1.png' %}" alt="" class="greyScale"/></a>
+                            <a href="http://www.joymax.com/" target="_blank" class="p4"><img src="{% static 'images/pp4.png' %}" alt="" class="greyScale"/></a>
+                            <a href="http://symantec.com/" target="_blank" class="p5"><img src="{% static 'images/pp5.png" alt="" class="greyScale"/></a>
+                            <a href="http://www.webzen.com/main" target="_blank" class="p6"><img src="{% static 'images/pp6.png' %}" alt="" class="greyScale"/></a>
+                            <a href="http://www.grindinggear.com/" target="_blank" class="p7"><img src="{% static 'images/pp7.png' %}" alt="" class="greyScale"></a>
+                            <a href="http://www.hirezstudios.com/" target="_blank" class="p8"><img src="{% static 'images/hi-rez.png' %}" alt="" class="greyScale"></a>
+                            <div class="clear" style="margin: 0px;"></div>
+                            <a href="http://www.autumngames.com/" target="_blank" class="p11"><img src="{% static 'images/autumn.png' %}" alt="" class="greyScale"/></a>
+                            <a href="http://blackmoondev.com/" target="_blank" class="p12"><img src="{% static 'images/blackmoon.png' %}" alt="" class="greyScale"/></a>
+                            <a href="http://www.keenswh.com/" target="_blank" class="p14"><img src="{% static 'images/keen.png' %}" alt="" class="greyScale"/></a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="foot-bottom">
+                    <div class="foo-left">
+                        <h6>¿Quieres saber más sobre nosotros?</h6>
+                        <p>Visite nuestra web oficial <a href="http://www.g2a.co/" target="_blank">g2a.co</a></p>
+                    </div>
+                    <div class="foo-center">
+                        <div class="link_sitemap"><span>Quick links: </span> <a href="shop/sitemap/categories.html">All Categories</a>, <a href="supporthub.html">HelpDesk</a></div>
+                        <div class="g2a-address">
+                            <strong>G2A.COM Limited<br /></strong> Unit 1401, 14/F Treasure Centre, 42 Hung To Road, Kwun Tong, Hong Kong <br />
+                            <strong>Incorporation number:</strong> 2088957 <span class="ga-separator"></span>
+                            <strong>Business registration number:</strong> 63264201
+                            <p style="margin-top:10px">
+                                Customer (support) services are granted by G2A.COM Sp. z.o.o. <br />
+                                <b>Address:</b> G2A.COM Sp. z.o.o., 26/7 Moniuszki Street, 31-523 Cracow, Poland <br />
+                                <b>Customer support email address:</b> support@g2a.com                            
+                            </p>
+                        </div>
+                        <p>
+                            Use of this Web site constitutes acceptance of the <a href="terms-and-conditions.html">Terms and Conditions</a> and <a href="privacy-policy.html">Privacy policy</a>. All copyrights, trade marks, service marks belong to the corresponding owners. <br />
+                        </p>
+                    </div>
+                    <div class="foo-right">
+                        <div class="g2a-rights">Derechos del autor &copy; 2015 G2A.COM</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>

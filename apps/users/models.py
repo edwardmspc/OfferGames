@@ -8,7 +8,7 @@ class UserManager(BaseUserManager):
                      **extra_fields):
         email = self.normalize_email(email)
         if not email:
-            raise ValueError('el email debe ser obligado')
+            raise ValueError('El email debe ser obligado')
         user = self.model(username=username, email=email, is_active=True,
                           is_staff=is_staff, is_superuser=is_superuser,
                           **extra_fields)
@@ -32,7 +32,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     first_name = models.CharField(max_length=140)
     last_name = models.CharField(max_length=140)
-    telephone = models.CharField(max_length=50, null=True, blank=True)
 
     #Extras
     is_active = models.BooleanField(default=True)
@@ -46,7 +45,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     def get_short_name(self):
-        return self.username
+        return self.first_name
 
     def encoded_username(self):
         import base64
@@ -56,26 +55,3 @@ class User(AbstractBaseUser, PermissionsMixin):
         import base64
         return base64.b64decode(username)
 
-    class Meta:
-        verbose_name = "Usuario"
-        verbose_name_plural = "Lista de usuarios"
-
-
-class MembershipHistory(models.Model):
-    user = models.ForeignKey(User)
-    date_create = models.DateTimeField(auto_now_add=True)
-
-
-class ReComprasHistory(models.Model):
-    user = models.ForeignKey(User)
-    membership_id = models.CharField(max_length=140)
-    ref = models.CharField(max_length=140)
-    is_approve = models.BooleanField(default=False)
-    date_create = models.DateTimeField(auto_now_add=True)
-
-
-class MembershipSerie(models.Model):
-    user = models.ForeignKey(User)
-    serie = models.CharField(max_length=140)
-    is_active = models.BooleanField(default=False)
-    date_create = models.DateTimeField(auto_now_add=True)

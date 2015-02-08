@@ -43,6 +43,9 @@ THIRD_PARTY_APP = (
 )
 
 LOCAL_APP = (
+    'apps.users',
+    'apps.shops',
+    'apps.checkout',
 )
 
 INSTALLED_APPS = DJANGO_APP + THIRD_PARTY_APP + LOCAL_APP
@@ -85,6 +88,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/

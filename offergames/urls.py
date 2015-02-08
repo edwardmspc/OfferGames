@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     #url(r'^', include('apps.ecommerce.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('apps.shops.urls')),
 )
 
 from django.conf import settings
