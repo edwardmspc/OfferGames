@@ -39,7 +39,7 @@ class Article(models.Model):
     name = models.CharField(max_length=140)
     slug = models.SlugField(editable=False)
     genre = models.ManyToManyField(Genre, blank=True)
-    platform = models.ManyToManyField(Platform)
+    platform = models.ManyToManyField(Platform, blank=True)
     content = models.TextField(blank=True)
     imagen = models.ImageField(upload_to='shop', blank=True)
     trailer = models.CharField(max_length=140, blank=True)
@@ -131,6 +131,7 @@ def update(sender,**kwargs):
     try:
         varff = kwargs.get('instance')
         for x in varff.media:
+            print "Descargando %s" %(x)
             q = Galery(url=x, article=varff)
             q.save()
     except:

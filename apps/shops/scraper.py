@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # 
 # 
 # 
-keyword = "Grand Theft Auto V"
+keyword = "Dragon Ball: Xenoverse"
 
 query_args = { 'q':keyword, 'zona':'resultados-busqueda' }
 encoded_args = urllib.urlencode(query_args)
