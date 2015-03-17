@@ -1,0 +1,4 @@
+Django==1.7.4
+Unipath==1.0
+beautifulsoup4==4.3.2
+pillow==2.7.0
