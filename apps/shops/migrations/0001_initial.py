@@ -16,19 +16,42 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=140)),
                 ('slug', models.SlugField(editable=False)),
-                ('content', models.TextField()),
-                ('imagen', models.ImageField(upload_to=b'shops')),
-                ('trailer', models.CharField(max_length=140)),
+                ('content', models.TextField(blank=True)),
+                ('imagen', models.ImageField(upload_to=b'shop', blank=True)),
+                ('trailer', models.CharField(max_length=140, blank=True)),
                 ('amount', models.DecimalField(default=0.0, max_digits=9, decimal_places=2)),
-                ('views', models.PositiveIntegerField(default=0)),
-                ('solds', models.PositiveIntegerField(default=0)),
+                ('views', models.PositiveIntegerField(default=0, editable=False)),
+                ('solds', models.PositiveIntegerField(default=0, editable=False)),
             ],
             options={
             },
             bases=(models.Model,),
         ),
         migrations.CreateModel(
-            name='Category',
+            name='Galery',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('imagen', models.ImageField(upload_to=b'galery', blank=True)),
+                ('url', models.CharField(max_length=200, editable=False)),
+                ('article', models.ForeignKey(to='shops.Article')),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='Genre',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('name', models.CharField(max_length=140)),
+                ('slug', models.SlugField(editable=False)),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='Platform',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=140)),
@@ -40,8 +63,14 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='article',
-            name='category',
-            field=models.ManyToManyField(to='shops.Category'),
+            name='genre',
+            field=models.ManyToManyField(to='shops.Genre', blank=True),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='article',
+            name='platform',
+            field=models.ManyToManyField(to='shops.Platform'),
             preserve_default=True,
         ),
     ]

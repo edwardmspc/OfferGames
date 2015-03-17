@@ -1,7 +1,0 @@
-<div class="pop-up-new" style="display: none;">
-            <div class="pop-up-new-content">
-                <div><img onclick="jQuery('body').css('overflow', 'auto'); jQuery('.pop-up-new').hide();" class="pop-up-close" alt="Close" src="skin/frontend/gate/default/images/marketplace/rating/close3.png"></div>
-                <div class="pop-up-new-content-inside">
-                </div>
-            </div>
-        </div>
