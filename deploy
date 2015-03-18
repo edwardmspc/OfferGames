@@ -1,5 +1,1 @@
 #!/bin/sh
-cd ~/var/www/offergamesenv/offergames/
-git init
-git remote add origin https://github.com/edwardmspc/OfferGames.git
-git pull origin master
