@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).ancestor(2)
 SECRET_KEY = 'f8$md6ubr^qy8#e0ip=rc^p-1d1$w-ad*fk4ako&=mm69dtzwu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
