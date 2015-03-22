@@ -28,8 +28,6 @@ TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = []
 
 
-# Application definition
-
 DJANGO_APP = (
     'django.contrib.admin',
     'django.contrib.auth',
